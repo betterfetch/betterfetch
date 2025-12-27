@@ -1,6 +1,6 @@
 # Cargo run
 default:
-	cargo run
+    cargo run
 
 # Build the project in release mode
 build:
@@ -8,7 +8,7 @@ build:
 
 # Run the project from source
 run:
-	cargo run
+    cargo run
 
 # Install the binary globally
 install:
@@ -36,9 +36,17 @@ doc:
 
 # git status
 stat:
-	git status
+    git status
 
 # just clean && just build
 b:
     just clean
     just build
+
+# Build the project in development(debug) mode
+build-dev:
+    cargo build
+
+reinstall:
+    just uninstall
+    just install

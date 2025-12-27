@@ -1,19 +1,19 @@
 use os_info::Info;
 
-pub fn print_ascii_art(os: &Info) {
+pub fn get_ascii_art(os: &Info) -> &'static str {
     let name = os.os_type().to_string().to_lowercase();
     if name.contains("ubuntu") {
-        println!("{}", UBUNTU_ASCII);
+        UBUNTU_ASCII
     } else if name.contains("debian") {
-        println!("{}", DEBIAN_ASCII);
+        DEBIAN_ASCII
     } else if name.contains("arch") {
-        println!("{}", ARCH_ASCII);
+        ARCH_ASCII
     } else if name.contains("void") {
-        println!("{}", VOID_ASCII);
+        VOID_ASCII
     } else if name.contains("opensuse") {
-        println!("{}", OPENSUSE_ASCII);
+        OPENSUSE_ASCII
     } else {
-        println!("{}", GENERIC_ASCII);
+        GENERIC_ASCII
     }
 }
 
@@ -27,47 +27,54 @@ const GENERIC_ASCII: &str = r#"
 "#;
 
 const UBUNTU_ASCII: &str = r#"
- _   _ _                 _
-| | | | |__  _   _ _ __ | |_ _   _
-| | | | '_ \| | | | '_ \| __| | | |
-| |_| | |_) | |_| | | | | |_| |_| |
- \___/|_.__/ \__,_|_| |_|\__|\__,_|
+         _
+     ---(_)
+ _/  ---  \
+(_) |   |
+  \  --- _/
+     ---(_)
 
 "#;
 
 const DEBIAN_ASCII: &str = r#"
- ____       _     _
-|  _ \  ___| |__ (_) __ _ _ __
-| | | |/ _ \ '_ \| |/ _` | '_ \
-| |_| |  __/ |_) | | (_| | | | |
-|____/ \___|_.__/|_|\__,_|_| |_|
+  _____
+ /  __ \
+|  /    |
+|  \___-
+ -_
+   --_
 
 "#;
 
 const ARCH_ASCII: &str = r#"
-    _             _
-   / \   _ __ ___| |__
-  / _ \ | '__/ __| '_ \
- / ___ \| | | (__| | | |
-/_/   \_\_|  \___|_| |_|
+       /\
+      /  \
+     /\   \
+    /      \
+   /   ,,   \
+  /   |  |  -\
+ /_-''    ''-_\
 
 "#;
 
 const VOID_ASCII: &str = r#"
-__     __    _     _
-\ \   / /__ (_) __| |
- \ \ / / _ \| |/ _` |
-  \ V / (_) | | (_| |
-   \_/ \___/|_|\__,_|
+    _______
+ _ \______ -
+| \  ___  \ |
+| | /   \ | |
+| | \___/ | |
+| \______ \_|
+ -_______\
 
 "#;
 
 const OPENSUSE_ASCII: &str = r#"
-  ___                   ____
- / _ \ _ __   ___ _ __ / ___| _   _ ___  ___
-| | | | '_ \ / _ \ '_ \\___ \| | | / __|/ _ \
-| |_| | |_) |  __/ | | |___) | |_| \__ \  __/
- \___/| .__/ \___|_| |_|____/ \__,_|___/\___|
-      |_|
+  _______
+__|   __ \
+     / .\
+     \__/ |
+   _______|
+   \_______
+  __________\
 
 "#;

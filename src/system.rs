@@ -4,6 +4,7 @@ use std::path::Path;
 use sysinfo::{Disks, System};
 use users::{get_current_uid, get_user_by_uid};
 
+use crate::battery::get_battery_info;
 use crate::utils::{format_duration, read_first_line, read_uptime};
 
 pub struct SystemInfo {
@@ -20,6 +21,7 @@ pub struct SystemInfo {
     pub total_mem_mb: u64,
     pub used_mem_mb: u64,
     pub disk_line: String,
+    pub battery_info: Option<String>,
 }
 
 impl SystemInfo {
@@ -75,6 +77,7 @@ impl SystemInfo {
             total_mem_mb,
             used_mem_mb,
             disk_line,
+            battery_info: get_battery_info(),
         }
     }
 }
