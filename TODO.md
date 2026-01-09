@@ -1,11 +1,9 @@
 # TODOs
 
 [] Network info: Display IP addresses, MAC, and active interfaces.
-[] Minimal mode: Output only essential info for scripts.
 
 ## Working on ... 
 
-[] Add /.github and the contents needed
 [] Show the correct CPU name and the core count
 
 ## Finished
@@ -14,6 +12,9 @@
 [x] Uptime and load: Show system uptime and load averages.
 [x] Package count: Display number of installed packages (for popular distros).
 [x] Operating system logo: Show OS logo as ASCII art.
+[x] Minimal mode: Output only essential info for scripts.
+[x] Make the ascii and the info display side-by-side
+[x] Show the current battery percentage on laptops
 
 ## Partially done
 
