@@ -1,3 +1,7 @@
+<!-- Todo list generated and controlled by todos.sh
+For more information run: 
+$ todos.sh help
+-->
 [] Network info: Display IP addresses, MAC, and active interfaces.
 [] Show the correct CPU name and the core count
 [-] Config file support: Allow persistent user configuration.
