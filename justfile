@@ -73,23 +73,19 @@ check-all:
 # Run all quality checks (fmt, clippy, test)
 ci: fmt-check lint test
 
-# Show a short git status
-stat-short:
-    @git status -s
-
 # Run cargo with all warnings as errors
 strict:
     RUSTFLAGS="-D warnings" cargo build --all-targets --all-features
 
-# Watch for changes and run tests
+# Watch for changes and run tests (requires: cargo-watch)
 watch-test:
     cargo watch -x test
 
-# Watch for changes and run the project
+# Watch for changes and run the project (requires: cargo-watch)
 watch-run:
     cargo watch -x run
 
-# Show outdated dependencies
+# Show outdated dependencies (requires: cargo-outdated. !! Migth not work on some systems)
 outdated:
     cargo outdated
 

@@ -25,3 +25,4 @@ Added: config file support
 
 ### DX
 - There are not DX improvments (yet)
+## v0.1.4 (Status: Coming sooon)
