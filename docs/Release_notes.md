@@ -24,5 +24,18 @@ Added: config file support
 - Updated some dependencies
 
 ### DX
-- There are not DX improvments (yet)
-## v0.1.4 (Status: Coming sooon)
+- There are not DX improvement
+## v0.1.4 (Official release: 8/02/2026)
+### Features
+- side-by-side ASCII and information
+- Logos for some operating systems instead of just the name with ASCII characters
+
+### Maintenance
+- Overall maintenance
+
+### DX
+- Made the build script better for nice DX
+- Utilized github actions for the codeberg mirror to automatically push the latest changes 
+
+<img width="598" height="307" alt="Preview" src="https://github.com/user-attachments/assets/05da9c02-0627-4077-b83e-c22e9983fca2" />
+
