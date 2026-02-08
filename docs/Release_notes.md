@@ -36,6 +36,7 @@ Added: config file support
 ### DX
 - Made the build script better for nice DX
 - Utilized github actions for the codeberg mirror to automatically push the latest changes 
+- Created a new way of managing to-dos
 
 <img width="598" height="307" alt="Preview" src="https://github.com/user-attachments/assets/05da9c02-0627-4077-b83e-c22e9983fca2" />
-
+<img width="1034" height="360" alt="Screenshot From 2026-02-08 20-59-49" src="https://github.com/user-attachments/assets/89a797b4-ee59-4ed5-826b-82051e8af03a" />
