@@ -78,7 +78,7 @@ We love contributions! 🎉 Please check out [CONTRIBUTING.md](CONTRIBUTING.md) 
 ---
 
 ## 📜 License
-[MIT](LICENSE) © 2025 [betterfetch contributors](https://github.com/betterfetch/betterfetch/graphs/contributors)
+[ZPL-2.1 (Zope Public License 2.1)](LICENSE) © 2025 [betterfetch contributors](https://github.com/betterfetch/betterfetch/graphs/contributors)
 
 ---
 

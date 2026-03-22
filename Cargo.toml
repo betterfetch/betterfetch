@@ -7,7 +7,7 @@ rust-version = "1.88.0"
 authors = ["David Balishyan <davidbalishyan12@gmail.com>"]
 homepage = "https://betterfetch.github.io"
 readme="README.md"
-license = "MIT"
+license = "ZPL-2.1"
 repository = "https://github.com/betterfetch/betterfetch"
 
 
