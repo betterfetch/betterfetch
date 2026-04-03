@@ -140,5 +140,5 @@ profile:
 
 # Run the todo script
 [group('Tools')]
-todos *ARGS:
+todo *ARGS:
     ./todos.sh {{ ARGS }}
