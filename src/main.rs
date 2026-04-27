@@ -14,6 +14,7 @@ use config::Config;
 use packages::detect_package_count;
 use system::SystemInfo;
 
+/// The main endpoint of the project, applys configs and displays the system info
 fn main() {
     let config: Config = Config::load();
     let args: Args = Args::parse();
